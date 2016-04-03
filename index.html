@@ -9,10 +9,12 @@
 </head>
 <body ng-controller="FlickrSearchrCtrl">
 	<div class="main">
-		<form name="searchForm" ng-submit="submit()">
+		<form name="searchForm" novalidate ng-submit="submit()">
 			<h1>Flickr Searchr</h1>
-			<input type="text" required/>
+			<input type="text" required ng-model="searchString"
+				ng-class="{error:searchForm.$submitted && searchForm.$invalid}"/>
 			<input type="submit" value="Submit"/>
+			<h2 ng-show="searchForm.$submitted && searchForm.$invalid">Please enter a search term</h2>
 		</form>
 	
 	<div class="pictures">

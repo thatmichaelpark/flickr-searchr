@@ -22,6 +22,10 @@ input {
 	font-family: Verdana, sans-serif;
 	border: 2px solid;
 }
+
+input.error {
+	background: pink;
+}
 .pictures {
 }
 
