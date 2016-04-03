@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="FlickrSearcherApp">
+<html lang="en" ng-app="FlickrSearchrApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Flickr Searchr</title>
 	<link rel="stylesheet" href="styles.css">
 	<script data-require="angular.js@1.3.10" data-semver="1.3.10" src="https://code.angularjs.org/1.3.10/angular.js"></script>
-	<script src="flickrsearcher.js"></script>
+	<script src="app.js"></script>
 </head>
-<body>
+<body ng-controller="FlickrSearchrCtrl">
 	<div class="main">
-	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore unde earum alias excepturi ducimus, enim fuga odio minima natus placeat vero veniam, iure sapiente odit nemo, necessitatibus repellat. Necessitatibus.
-	</h1>
+		<form name="searchForm" ng-submit="submit()">
+			<h1>Flickr Searchr</h1>
+			<input type="text" required/>
+			<input type="submit" value="Submit"/>
+		</form>
+	
 	<div class="pictures">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x100">
-		<img src="http://placehold.it/100x150">
-		<img src="http://placehold.it/100x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/100x100">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-		<img src="http://placehold.it/200x150">
-	</div>
+
 	</div>
 </body>
 </html>

@@ -3,6 +3,7 @@ html, body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+	font-family: Verdana, sans-serif;
 }
 
 .main {
@@ -12,6 +13,15 @@ html, body {
 	background: white;
 }
 
+form {
+	padding-top: 3rem;
+	text-align: center;
+}
+
+input {
+	font-family: Verdana, sans-serif;
+	border: 2px solid;
+}
 .pictures {
 }
 
