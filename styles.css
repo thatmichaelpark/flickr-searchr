@@ -16,6 +16,7 @@ html, body {
 form {
 	padding-top: 3rem;
 	text-align: center;
+	height: 10rem;
 }
 
 input {
@@ -26,12 +27,29 @@ input {
 input.error {
 	background: pink;
 }
+
+.results {
+	text-align: center;
+}
 .pictures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 img {
-	border: 1px solid red;
+	box-shadow: 5px 5px 5px lightgray;
 	flex: 0 0 auto;
-	margin-bottom: 1rem;
+	margin: 1rem;
 }
 h1 {margin-top: 0;}
+
+.notification {
+	transition: all linear 2s;
+	opacity: 1;
+}
+
+.ng-hide {
+	opacity: 0;
+}
