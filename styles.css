@@ -53,3 +53,16 @@ h1 {margin-top: 0;}
 .ng-hide {
 	opacity: 0;
 }
+
+img.ng-enter {
+	transition: all linear 0.5s;
+	opacity: 0;
+}
+
+img.ng-enter-active {
+	opacity: 1;	
+}
+
+img.ng-enter-stagger {
+	transition-delay: 0.1s;
+}

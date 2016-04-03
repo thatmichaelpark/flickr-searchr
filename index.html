@@ -19,7 +19,7 @@
 			<h2 class="notification" ng-show="notificationVisible">{{notification}}</h2>
 		</form>
 		<hr/>
-		<div ng-if="photos.length">
+		<div ng-show="photos.length">
 			<div class="results">
 				<h2>{{photos.length}} pictures found for "{{search}}"</h2>
 				<div class="pictures">
