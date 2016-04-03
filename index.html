@@ -23,7 +23,7 @@
 			<div class="results">
 				<h2>{{photos.length}} pictures found for "{{search}}"</h2>
 				<div class="pictures">
-					<img ng-repeat="photo in photos" src="{{thumbnailUrl(photo)}}" ng-click="thumbnailClick(photo)"/>
+					<img ng-repeat="photo in photos" ng-src="{{thumbnailUrl(photo)}}" ng-click="thumbnailClick(photo)"/>
 				</div>
 			</div>
 		</div>
